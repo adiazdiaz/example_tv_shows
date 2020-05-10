@@ -3,20 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		934C7F5D9FEE912D705C1EE8 /* Pods_example_tv_shows_example_tv_showsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0A01D1562CD13AAEAE20E4 /* Pods_example_tv_shows_example_tv_showsUITests.framework */; };
 		A96CF692DF634DE8FB11A9B1 /* Pods_example_tv_shows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D259E6CE6B3BB9AC00FFCD5 /* Pods_example_tv_shows.framework */; };
 		E000D07F2466FB7400DD6173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D07E2466FB7400DD6173 /* AppDelegate.swift */; };
-		E000D0812466FB7400DD6173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0802466FB7400DD6173 /* SceneDelegate.swift */; };
-		E000D0832466FB7400DD6173 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0822466FB7400DD6173 /* ViewController.swift */; };
 		E000D0862466FB7400DD6173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E000D0842466FB7400DD6173 /* Main.storyboard */; };
 		E000D0882466FB7500DD6173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E000D0872466FB7500DD6173 /* Assets.xcassets */; };
 		E000D08B2466FB7500DD6173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E000D0892466FB7500DD6173 /* LaunchScreen.storyboard */; };
 		E000D0962466FB7500DD6173 /* example_tv_showsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0952466FB7500DD6173 /* example_tv_showsTests.swift */; };
 		E000D0A12466FB7500DD6173 /* example_tv_showsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0A02466FB7500DD6173 /* example_tv_showsUITests.swift */; };
+		E000D0B224671A8000DD6173 /* TvShowsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0B124671A8000DD6173 /* TvShowsListViewController.swift */; };
+		E000D0B424671AC300DD6173 /* TvShowsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0B324671AC300DD6173 /* TvShowsListPresenter.swift */; };
+		E000D0BA2467302100DD6173 /* TvShowsListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0B92467302100DD6173 /* TvShowsListProtocols.swift */; };
+		E000D0C1246764E600DD6173 /* TvShowsListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C0246764E600DD6173 /* TvShowsListRemoteDataManager.swift */; };
+		E000D0C32467672400DD6173 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C22467672400DD6173 /* Endpoints.swift */; };
+		E000D0C524676DB700DD6173 /* TvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C424676DB700DD6173 /* TvShow.swift */; };
+		E000D0C7246770B000DD6173 /* TvShowsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C6246770B000DD6173 /* TvShowsResponse.swift */; };
+		E000D0C92467758600DD6173 /* TvShowsListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C82467758600DD6173 /* TvShowsListWireFrame.swift */; };
+		E000D0CB246783C800DD6173 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0CA246783C800DD6173 /* BundleExtension.swift */; };
 		E5E21B1EC30259679D25535B /* Pods_example_tv_showsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F3B8B784B34E940E78285F /* Pods_example_tv_showsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,8 +56,6 @@
 		DFFFC889E93B6F45DE0839CD /* Pods-example_tv_showsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example_tv_showsTests.debug.xcconfig"; path = "Target Support Files/Pods-example_tv_showsTests/Pods-example_tv_showsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E000D07B2466FB7400DD6173 /* example_tv_shows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example_tv_shows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E000D07E2466FB7400DD6173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E000D0802466FB7400DD6173 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E000D0822466FB7400DD6173 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E000D0852466FB7400DD6173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E000D0872466FB7500DD6173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E000D08A2466FB7500DD6173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +66,15 @@
 		E000D09C2466FB7500DD6173 /* example_tv_showsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = example_tv_showsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E000D0A02466FB7500DD6173 /* example_tv_showsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = example_tv_showsUITests.swift; sourceTree = "<group>"; };
 		E000D0A22466FB7500DD6173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E000D0B124671A8000DD6173 /* TvShowsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListViewController.swift; sourceTree = "<group>"; };
+		E000D0B324671AC300DD6173 /* TvShowsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListPresenter.swift; sourceTree = "<group>"; };
+		E000D0B92467302100DD6173 /* TvShowsListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListProtocols.swift; sourceTree = "<group>"; };
+		E000D0C0246764E600DD6173 /* TvShowsListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListRemoteDataManager.swift; sourceTree = "<group>"; };
+		E000D0C22467672400DD6173 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		E000D0C424676DB700DD6173 /* TvShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShow.swift; sourceTree = "<group>"; };
+		E000D0C6246770B000DD6173 /* TvShowsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsResponse.swift; sourceTree = "<group>"; };
+		E000D0C82467758600DD6173 /* TvShowsListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListWireFrame.swift; sourceTree = "<group>"; };
+		E000D0CA246783C800DD6173 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +115,6 @@
 				DFFFC889E93B6F45DE0839CD /* Pods-example_tv_showsTests.debug.xcconfig */,
 				AAC2E6E4C1987A49F7513450 /* Pods-example_tv_showsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,12 +143,14 @@
 		E000D07D2466FB7400DD6173 /* example_tv_shows */ = {
 			isa = PBXGroup;
 			children = (
-				E000D07E2466FB7400DD6173 /* AppDelegate.swift */,
-				E000D0802466FB7400DD6173 /* SceneDelegate.swift */,
-				E000D0822466FB7400DD6173 /* ViewController.swift */,
+				E000D0AE2467186900DD6173 /* Settings */,
+				E000D0BD2467330600DD6173 /* Services */,
+				E000D0BF24674D9200DD6173 /* Models */,
+				E000D0AF246719E400DD6173 /* Scenes */,
+				E000D0BB2467326C00DD6173 /* Utils */,
 				E000D0842466FB7400DD6173 /* Main.storyboard */,
-				E000D0872466FB7500DD6173 /* Assets.xcassets */,
 				E000D0892466FB7500DD6173 /* LaunchScreen.storyboard */,
+				E000D0872466FB7500DD6173 /* Assets.xcassets */,
 				E000D08C2466FB7500DD6173 /* Info.plist */,
 			);
 			path = example_tv_shows;
@@ -159,6 +174,75 @@
 			path = example_tv_showsUITests;
 			sourceTree = "<group>";
 		};
+		E000D0AE2467186900DD6173 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E000D07E2466FB7400DD6173 /* AppDelegate.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E000D0AF246719E400DD6173 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E000D0B024671A0B00DD6173 /* TvShowsList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E000D0B024671A0B00DD6173 /* TvShowsList */ = {
+			isa = PBXGroup;
+			children = (
+				E000D0B92467302100DD6173 /* TvShowsListProtocols.swift */,
+				E000D0B124671A8000DD6173 /* TvShowsListViewController.swift */,
+				E000D0B324671AC300DD6173 /* TvShowsListPresenter.swift */,
+				E000D0C0246764E600DD6173 /* TvShowsListRemoteDataManager.swift */,
+				E000D0C82467758600DD6173 /* TvShowsListWireFrame.swift */,
+			);
+			path = TvShowsList;
+			sourceTree = "<group>";
+		};
+		E000D0BB2467326C00DD6173 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E000D0BC2467327B00DD6173 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E000D0BC2467327B00DD6173 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E000D0CA246783C800DD6173 /* BundleExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E000D0BD2467330600DD6173 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E000D0BE2467331200DD6173 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E000D0BE2467331200DD6173 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E000D0C22467672400DD6173 /* Endpoints.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E000D0BF24674D9200DD6173 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E000D0C424676DB700DD6173 /* TvShow.swift */,
+				E000D0C6246770B000DD6173 /* TvShowsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FE3BE6AE8EF78C706EE45B06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +264,7 @@
 				E000D0772466FB7400DD6173 /* Sources */,
 				E000D0782466FB7400DD6173 /* Frameworks */,
 				E000D0792466FB7400DD6173 /* Resources */,
+				D81CE0A51B0495AB474E3100 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +302,7 @@
 				E000D0982466FB7500DD6173 /* Sources */,
 				E000D0992466FB7500DD6173 /* Frameworks */,
 				E000D09A2466FB7500DD6173 /* Resources */,
+				0B44C66FEC719B67D3EB9C64 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,6 +385,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B44C66FEC719B67D3EB9C64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-example_tv_shows-example_tv_showsUITests/Pods-example_tv_shows-example_tv_showsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-example_tv_shows-example_tv_showsUITests/Pods-example_tv_shows-example_tv_showsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-example_tv_shows-example_tv_showsUITests/Pods-example_tv_shows-example_tv_showsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		39BFAA43FE3A956AF81BCCA6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,6 +446,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D81CE0A51B0495AB474E3100 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-example_tv_shows/Pods-example_tv_shows-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-example_tv_shows/Pods-example_tv_shows-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-example_tv_shows/Pods-example_tv_shows-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FA612EFC314321573D02BBD8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,9 +492,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E000D0832466FB7400DD6173 /* ViewController.swift in Sources */,
+				E000D0C92467758600DD6173 /* TvShowsListWireFrame.swift in Sources */,
+				E000D0C524676DB700DD6173 /* TvShow.swift in Sources */,
+				E000D0C1246764E600DD6173 /* TvShowsListRemoteDataManager.swift in Sources */,
+				E000D0BA2467302100DD6173 /* TvShowsListProtocols.swift in Sources */,
 				E000D07F2466FB7400DD6173 /* AppDelegate.swift in Sources */,
-				E000D0812466FB7400DD6173 /* SceneDelegate.swift in Sources */,
+				E000D0CB246783C800DD6173 /* BundleExtension.swift in Sources */,
+				E000D0B424671AC300DD6173 /* TvShowsListPresenter.swift in Sources */,
+				E000D0C32467672400DD6173 /* Endpoints.swift in Sources */,
+				E000D0C7246770B000DD6173 /* TvShowsResponse.swift in Sources */,
+				E000D0B224671A8000DD6173 /* TvShowsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
