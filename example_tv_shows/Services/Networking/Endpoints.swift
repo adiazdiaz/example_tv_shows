@@ -10,7 +10,7 @@ import Foundation
 
 struct API {
     static let baseUrl = "https://api.themoviedb.org/3"
-    static let theMovieDbAPIKey = Bundle.main.TheMovieDbAPIKey
+    static let theMovieDbAPIKey = "api_key=\(Bundle.main.theMovieDbAPIKey)"
 }
 
 protocol Endpoint {
@@ -22,18 +22,18 @@ enum Endpoints {
     
     enum TvShows: Endpoint {
         
-        case fetchPopular(Int)
+        case getPopularTvShows(Int)
+        case getTvShow(Int)
         
         public var path: String {
             switch self {
-            case .fetchPopular(let page): return "/tv/popular?api_key=\(API.theMovieDbAPIKey)&page=\(page)"
+            case .getPopularTvShows(let page): return "/tv/popular?\(API.theMovieDbAPIKey)&page=\(page)"
+            case .getTvShow(let tvShowId): return "/tv/\(tvShowId)?\(API.theMovieDbAPIKey)"
             }
         }
         
         public var url: String {
-            switch self {
-            case .fetchPopular: return "\(API.baseUrl)\(path)"
-            }
+            return "\(API.baseUrl)\(path)"
         }
     }
 }

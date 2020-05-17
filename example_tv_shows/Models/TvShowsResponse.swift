@@ -15,8 +15,7 @@ struct TvShowsResponse: Codable {
     let totalPages: Int?
     
     private enum CodingKeys: String, CodingKey {
-        case page
-        case results
+        case page, results
         case totalResults = "total_results"
         case totalPages = "total_pages"
     }

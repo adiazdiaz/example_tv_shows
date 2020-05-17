@@ -10,7 +10,15 @@ import Foundation
 
 extension Bundle {
     
-    var TheMovieDbAPIKey: String {
+    var theMovieDbAPIKey: String {
         return object(forInfoDictionaryKey: "TheMovieDbAPIKey") as? String ?? ""
+    }
+    
+    var theMovieDbImagesPathThumbnail: String {
+        return object(forInfoDictionaryKey: "TheMovieDbImagesPathThumbnail") as? String ?? ""
+    }
+    
+    var theMovieDbImagesPath: String {
+        return object(forInfoDictionaryKey: "TheMovieDbImagesPath") as? String ?? ""
     }
 }

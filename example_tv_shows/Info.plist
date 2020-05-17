@@ -38,6 +38,10 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>TheMovieDbAPIKey</key>
-	<string>bca4e5f7459f47db5f46b48571b0f423</string>
+	<string></string>
+	<key>TheMovieDbImagesPathThumbnail</key>
+	<string>https://image.tmdb.org/t/p/w185</string>
+	<key>TheMovieDbImagesPath</key>
+	<string>https://image.tmdb.org/t/p/w780</string>
 </dict>
 </plist>
