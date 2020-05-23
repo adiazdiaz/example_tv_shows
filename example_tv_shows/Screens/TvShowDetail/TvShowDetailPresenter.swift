@@ -17,6 +17,11 @@ class TvShowDetailPresenter {
     
     var tvShowId: Int?
     
+    required init(view: TvShowDetailViewProtocol?, wireFrame: TvShowDetailWireFrameProtocol?) {
+        self.view = view
+        self.wireFrame = wireFrame
+    }
+    
     func loadTvShowDetail(tvShowDetail: TvShowDetail?) {
         if tvShowDetail != nil {
             if tvShowDetail?.posterPath != nil { loadTvShowPosterImage(posterImage: (tvShowDetail?.getCompletePosterPath())!) }

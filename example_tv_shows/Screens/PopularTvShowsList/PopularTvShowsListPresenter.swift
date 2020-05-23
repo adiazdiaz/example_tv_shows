@@ -16,6 +16,11 @@ class PopularTvShowsListPresenter {
     
     var currentPage = 1
     var popularTvShows = [TvShow]()
+    
+    required init(view: PopularTvShowsListViewProtocol?, wireFrame: PopularTvShowsListWireFrameProtocol?) {
+        self.view = view
+        self.wireFrame = wireFrame
+    }
 }
 
 //MARK: - TvShowsListPresenterProtocol

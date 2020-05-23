@@ -13,13 +13,12 @@ class PopularTvShowsListViewController: UIViewController {
     @IBOutlet weak var popularTvShowsCollectionView: UICollectionView!
     
     var presenter: PopularTvShowsListPresenterProtocol?
+    var imagesCache: ImagesCacheProtocol?
     
     private let itemsPerRow: CGFloat = 3
     private let spacingForItems: CGFloat = 25.0
     private let spacingForLinesOfItems: CGFloat = 20.0
     private let itemAspectRatio = CGFloat(1.0 / 2.0)
-    
-    private let imagesCache = ImagesCache()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +27,7 @@ class PopularTvShowsListViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        imagesCache.clearImagesLoaded()
+        imagesCache?.clearImagesLoaded()
     }
 }
 
@@ -86,11 +85,11 @@ extension PopularTvShowsListViewController: UICollectionViewDataSource {
     }
     
     func setTvShowImage(cell: PopularTvShowsListCollectionViewCell, imageUrl: URL) {
-        if let imageLoaded = imagesCache.getImageLoaded(imageUrl: imageUrl) {
+        if let imageLoaded = imagesCache?.getImageLoaded(imageUrl: imageUrl) {
             cell.image.image = imageLoaded
         } else {
             cell.image.loadFromUrl(url: imageUrl, completion: { image in
-                self.imagesCache.addImageToImagesLoaded(imageUrl: imageUrl, image: image)
+                self.imagesCache?.addImageToImagesLoaded(imageUrl: imageUrl, image: image)
             })
         }
     }

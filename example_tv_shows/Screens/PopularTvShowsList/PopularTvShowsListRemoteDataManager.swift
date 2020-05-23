@@ -11,6 +11,10 @@ import Alamofire
 class PopularTvShowsListRemoteDataManager {
     
     var remoteRequestHandler: PopularTvShowsListRemoteDataManagerOutputProtocol?
+    
+    required init(remoteRequestHandler: PopularTvShowsListRemoteDataManagerOutputProtocol?) {
+        self.remoteRequestHandler = remoteRequestHandler
+    }
 }
 
 //MARK: - TvShowsListRemoteDataManagerInputProtocol

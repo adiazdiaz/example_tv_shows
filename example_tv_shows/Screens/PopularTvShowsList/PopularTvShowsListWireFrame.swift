@@ -12,21 +12,15 @@ import UIKit
 class PopularTvShowsListWireFrame: PopularTvShowsListWireFrameProtocol {
     
     static func createPopularTvShowsListScreen() -> UIViewController {
-        let navigationController = UIStoryboard.main.instantiateViewController(withIdentifier: "NavigationControllerID")
-        if let view = navigationController.children.first as? PopularTvShowsListViewController {
-            var remoteDataManager: PopularTvShowsListRemoteDataManagerInputProtocol = PopularTvShowsListRemoteDataManager()
-            let wireFrame: PopularTvShowsListWireFrameProtocol = PopularTvShowsListWireFrame()
-            var presenter: PopularTvShowsListPresenterProtocol & PopularTvShowsListRemoteDataManagerOutputProtocol = PopularTvShowsListPresenter()
-            
-            remoteDataManager.remoteRequestHandler = presenter
-            presenter.view = view
-            presenter.wireFrame = wireFrame
-            presenter.remoteDataManager = remoteDataManager
-            view.presenter = presenter
-            
-            return navigationController
+        guard let navigationController = UIStoryboard.main.instantiateViewController(withIdentifier: "NavigationControllerID") as? UINavigationController else {
+            return UIViewController()
         }
-        return UIViewController()
+        
+        navigationController.viewControllers = [
+            Swinjector.sharedAssembler.resolver.resolve(PopularTvShowsListViewProtocol.self) as! PopularTvShowsListViewController
+        ]
+        
+        return navigationController
     }
     
     func presentTvShowDetailScreen(fromView: PopularTvShowsListViewProtocol, tvShowId: Int) {

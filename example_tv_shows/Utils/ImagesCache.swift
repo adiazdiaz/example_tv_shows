@@ -8,7 +8,13 @@
 
 import UIKit
 
-class ImagesCache {
+protocol ImagesCacheProtocol {
+    func getImageLoaded(imageUrl: URL) -> UIImage?
+    func addImageToImagesLoaded(imageUrl: URL, image: UIImage)
+    func clearImagesLoaded()
+}
+
+class ImagesCache: ImagesCacheProtocol {
     private var loadedImages = [URL: UIImage]()
     
     func getImageLoaded(imageUrl: URL) -> UIImage? {

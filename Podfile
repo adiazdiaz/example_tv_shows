@@ -6,6 +6,7 @@ target 'example_tv_shows' do
   use_frameworks!
 
   pod 'Alamofire', '~> 5.1'
+  pod 'Swinject'
 
   target 'example_tv_showsTests' do
     inherit! :search_paths

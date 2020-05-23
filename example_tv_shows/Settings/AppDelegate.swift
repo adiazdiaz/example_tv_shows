@@ -15,10 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let tvShowsList = PopularTvShowsListWireFrame.createPopularTvShowsListScreen()
-        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = tvShowsList
+        window?.rootViewController = PopularTvShowsListWireFrame.createPopularTvShowsListScreen()
         window?.makeKeyAndVisible()
         
         return true
