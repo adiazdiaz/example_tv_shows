@@ -19,7 +19,6 @@
 		E000D0B424671AC300DD6173 /* PopularTvShowsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0B324671AC300DD6173 /* PopularTvShowsListPresenter.swift */; };
 		E000D0BA2467302100DD6173 /* PopularTvShowsListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0B92467302100DD6173 /* PopularTvShowsListProtocols.swift */; };
 		E000D0C1246764E600DD6173 /* PopularTvShowsListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C0246764E600DD6173 /* PopularTvShowsListRemoteDataManager.swift */; };
-		E000D0C32467672400DD6173 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C22467672400DD6173 /* Endpoints.swift */; };
 		E000D0C524676DB700DD6173 /* TvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C424676DB700DD6173 /* TvShow.swift */; };
 		E000D0C7246770B000DD6173 /* TvShowsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C6246770B000DD6173 /* TvShowsResponse.swift */; };
 		E000D0C92467758600DD6173 /* PopularTvShowsListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C82467758600DD6173 /* PopularTvShowsListWireFrame.swift */; };
@@ -30,6 +29,16 @@
 		E0086065246C87A80063A720 /* TvShowDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0086064246C87A80063A720 /* TvShowDetailPresenter.swift */; };
 		E0086067246C87C90063A720 /* TvShowDetailRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0086066246C87C90063A720 /* TvShowDetailRemoteDataManager.swift */; };
 		E0086069246C87DE0063A720 /* TvShowDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0086068246C87DE0063A720 /* TvShowDetailWireFrame.swift */; };
+		E01B554924826D4600A2271C /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B554824826D4600A2271C /* EndPointType.swift */; };
+		E01B554B24826E2100A2271C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B554A24826E2100A2271C /* HTTPMethod.swift */; };
+		E01B554D24826F0100A2271C /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B554C24826F0100A2271C /* HTTPTask.swift */; };
+		E01B554F2482712900A2271C /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B554E2482712900A2271C /* ParameterEncoding.swift */; };
+		E01B55512482737A00A2271C /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B55502482737A00A2271C /* URLParameterEncoder.swift */; };
+		E01B55532482760000A2271C /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B55522482760000A2271C /* JSONParameterEncoder.swift */; };
+		E01B5555248276B600A2271C /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B5554248276B600A2271C /* NetworkRouter.swift */; };
+		E01B5557248277A500A2271C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B5556248277A400A2271C /* Router.swift */; };
+		E01B555924827F5A00A2271C /* TvApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B555824827F5A00A2271C /* TvApi.swift */; };
+		E01B555B248284CD00A2271C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B555A248284CD00A2271C /* NetworkManager.swift */; };
 		E01B98BD247896FC00B3AC28 /* Swinjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B98BC247896FC00B3AC28 /* Swinjector.swift */; };
 		E0368331246C73E000888B3C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0368330246C73E000888B3C /* UIViewControllerExtension.swift */; };
 		E04EC91924793CF800B3FFA9 /* ContainerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04EC91824793CF800B3FFA9 /* ContainerExtension.swift */; };
@@ -88,7 +97,6 @@
 		E000D0B324671AC300DD6173 /* PopularTvShowsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvShowsListPresenter.swift; sourceTree = "<group>"; };
 		E000D0B92467302100DD6173 /* PopularTvShowsListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvShowsListProtocols.swift; sourceTree = "<group>"; };
 		E000D0C0246764E600DD6173 /* PopularTvShowsListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvShowsListRemoteDataManager.swift; sourceTree = "<group>"; };
-		E000D0C22467672400DD6173 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		E000D0C424676DB700DD6173 /* TvShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShow.swift; sourceTree = "<group>"; };
 		E000D0C6246770B000DD6173 /* TvShowsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsResponse.swift; sourceTree = "<group>"; };
 		E000D0C82467758600DD6173 /* PopularTvShowsListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvShowsListWireFrame.swift; sourceTree = "<group>"; };
@@ -99,6 +107,16 @@
 		E0086064246C87A80063A720 /* TvShowDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailPresenter.swift; sourceTree = "<group>"; };
 		E0086066246C87C90063A720 /* TvShowDetailRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailRemoteDataManager.swift; sourceTree = "<group>"; };
 		E0086068246C87DE0063A720 /* TvShowDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailWireFrame.swift; sourceTree = "<group>"; };
+		E01B554824826D4600A2271C /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		E01B554A24826E2100A2271C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		E01B554C24826F0100A2271C /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		E01B554E2482712900A2271C /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		E01B55502482737A00A2271C /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		E01B55522482760000A2271C /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		E01B5554248276B600A2271C /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		E01B5556248277A400A2271C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E01B555824827F5A00A2271C /* TvApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvApi.swift; sourceTree = "<group>"; };
+		E01B555A248284CD00A2271C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E01B98BC247896FC00B3AC28 /* Swinjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swinjector.swift; sourceTree = "<group>"; };
 		E0368330246C73E000888B3C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		E04EC91824793CF800B3FFA9 /* ContainerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerExtension.swift; sourceTree = "<group>"; };
@@ -274,7 +292,10 @@
 		E000D0BE2467331200DD6173 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				E000D0C22467672400DD6173 /* Endpoints.swift */,
+				E01B554424826C7F00A2271C /* EndPoint */,
+				E01B554524826CA200A2271C /* Manager */,
+				E01B554624826CAD00A2271C /* Service */,
+				E01B554724826CB700A2271C /* Encoding */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -299,6 +320,44 @@
 				E0086066246C87C90063A720 /* TvShowDetailRemoteDataManager.swift */,
 			);
 			path = TvShowDetail;
+			sourceTree = "<group>";
+		};
+		E01B554424826C7F00A2271C /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				E01B555824827F5A00A2271C /* TvApi.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		E01B554524826CA200A2271C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E01B555A248284CD00A2271C /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E01B554624826CAD00A2271C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E01B554824826D4600A2271C /* EndPointType.swift */,
+				E01B554A24826E2100A2271C /* HTTPMethod.swift */,
+				E01B554C24826F0100A2271C /* HTTPTask.swift */,
+				E01B5554248276B600A2271C /* NetworkRouter.swift */,
+				E01B5556248277A400A2271C /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E01B554724826CB700A2271C /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				E01B554E2482712900A2271C /* ParameterEncoding.swift */,
+				E01B55502482737A00A2271C /* URLParameterEncoder.swift */,
+				E01B55522482760000A2271C /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
 			sourceTree = "<group>";
 		};
 		E01B98BB247896CB00B3AC28 /* Swinjector */ = {
@@ -570,30 +629,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01B555B248284CD00A2271C /* NetworkManager.swift in Sources */,
 				E04EC91F247975D100B3FFA9 /* CommonsAssembly.swift in Sources */,
 				E0086063246C879B0063A720 /* TvShowDetailViewController.swift in Sources */,
 				E000D0C92467758600DD6173 /* PopularTvShowsListWireFrame.swift in Sources */,
 				E09EE69D2470462D00E175F4 /* UIViewExtension.swift in Sources */,
+				E01B5557248277A500A2271C /* Router.swift in Sources */,
 				E04EC91D24796E2900B3FFA9 /* PopularTvShowListAssembly.swift in Sources */,
 				E000D0C524676DB700DD6173 /* TvShow.swift in Sources */,
 				E01B98BD247896FC00B3AC28 /* Swinjector.swift in Sources */,
 				E09EE69924702F9800E175F4 /* TvShowDetail.swift in Sources */,
+				E01B554B24826E2100A2271C /* HTTPMethod.swift in Sources */,
 				E000D0C1246764E600DD6173 /* PopularTvShowsListRemoteDataManager.swift in Sources */,
 				E000D0BA2467302100DD6173 /* PopularTvShowsListProtocols.swift in Sources */,
 				E0086061246C878B0063A720 /* TvShowDetailProtocols.swift in Sources */,
+				E01B554924826D4600A2271C /* EndPointType.swift in Sources */,
 				E04EC91924793CF800B3FFA9 /* ContainerExtension.swift in Sources */,
+				E01B55532482760000A2271C /* JSONParameterEncoder.swift in Sources */,
 				E000D07F2466FB7400DD6173 /* AppDelegate.swift in Sources */,
+				E01B555924827F5A00A2271C /* TvApi.swift in Sources */,
 				E000D0CB246783C800DD6173 /* BundleExtension.swift in Sources */,
 				E000D0CD246790C900DD6173 /* UIStoryboardExtension.swift in Sources */,
 				E000D0B424671AC300DD6173 /* PopularTvShowsListPresenter.swift in Sources */,
 				E04EC91B2479404100B3FFA9 /* TvShowDetailAssembly.swift in Sources */,
-				E000D0C32467672400DD6173 /* Endpoints.swift in Sources */,
 				E0086065246C87A80063A720 /* TvShowDetailPresenter.swift in Sources */,
 				E000D0C7246770B000DD6173 /* TvShowsResponse.swift in Sources */,
 				E0E664A52470B4440027D296 /* ImagesCache.swift in Sources */,
+				E01B55512482737A00A2271C /* URLParameterEncoder.swift in Sources */,
 				E0086067246C87C90063A720 /* TvShowDetailRemoteDataManager.swift in Sources */,
 				E000D0B224671A8000DD6173 /* PopularTvShowsListViewController.swift in Sources */,
+				E01B5555248276B600A2271C /* NetworkRouter.swift in Sources */,
 				E0552F5D246B1FB700F4FADC /* UIImageViewExtension.swift in Sources */,
+				E01B554F2482712900A2271C /* ParameterEncoding.swift in Sources */,
+				E01B554D24826F0100A2271C /* HTTPTask.swift in Sources */,
 				E0368331246C73E000888B3C /* UIViewControllerExtension.swift in Sources */,
 				E09EE69B24703E4100E175F4 /* UINavigationBarExtension.swift in Sources */,
 				E0552F5B246B1C9500F4FADC /* PopularTvShowsListCollectionViewCell.swift in Sources */,

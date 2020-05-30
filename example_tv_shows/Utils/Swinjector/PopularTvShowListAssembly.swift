@@ -37,7 +37,8 @@ class PopularTvShowListAssembly: Assembly {
         
         //RemoteDataManager
         container.register(PopularTvShowsListRemoteDataManagerInputProtocol.self) { resolver in
-            return PopularTvShowsListRemoteDataManager(remoteRequestHandler: resolver.resolve(PopularTvShowsListPresenterProtocol.self) as? PopularTvShowsListRemoteDataManagerOutputProtocol)
+            return PopularTvShowsListRemoteDataManager(networkManager: resolver.resolve(NetworkManagerProtocol.self),
+                remoteRequestHandler: resolver.resolve(PopularTvShowsListPresenterProtocol.self) as? PopularTvShowsListRemoteDataManagerOutputProtocol)
         }
         
         

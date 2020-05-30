@@ -11,8 +11,10 @@ import Alamofire
 class TvShowDetailRemoteDataManager {
     
     var remoteRequestHandler: TvShowDetailRemoteDataManagerOutputProtocol?
+    var networkManager: NetworkManagerProtocol?
     
-    required init(remoteRequestHandler: TvShowDetailRemoteDataManagerOutputProtocol?) {
+    required init(networkManager: NetworkManagerProtocol?, remoteRequestHandler: TvShowDetailRemoteDataManagerOutputProtocol?) {
+        self.networkManager = networkManager
         self.remoteRequestHandler = remoteRequestHandler
     }
 }
@@ -21,12 +23,11 @@ class TvShowDetailRemoteDataManager {
 extension TvShowDetailRemoteDataManager: TvShowDetailRemoteDataManagerInputProtocol {
     
     func getTvShow(tvShowId: Int) {
-        AF.request(Endpoints.TvShows.getTvShow(tvShowId).url, method: .get)
-        .validate()
-        .responseDecodable(of: TvShowDetail.self) { (response) in
-            switch response.result {
-                case .success(let tvShowDetail): self.remoteRequestHandler?.onGetTvShowSuccess(tvShowDetail: tvShowDetail)
-                case .failure(_): self.remoteRequestHandler?.onGetTvShowError()
+        networkManager?.getTvShowsDetail(tvShowId: tvShowId) { tvShowDetail, error in
+            if error != nil {
+                self.remoteRequestHandler?.onGetTvShowError()
+            } else {
+                self.remoteRequestHandler?.onGetTvShowSuccess(tvShowDetail: tvShowDetail)
             }
         }
     }

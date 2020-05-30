@@ -40,7 +40,7 @@ class TvShowDetailAssembly: Assembly {
 
         //RemoteDataManager
         container.register(TvShowDetailRemoteDataManagerInputProtocol.self) { resolver in
-            return TvShowDetailRemoteDataManager(
+            return TvShowDetailRemoteDataManager(networkManager: resolver.resolve(NetworkManagerProtocol.self),
                 remoteRequestHandler: resolver.resolve(TvShowDetailPresenterProtocol.self) as? TvShowDetailRemoteDataManagerOutputProtocol)
         }
         

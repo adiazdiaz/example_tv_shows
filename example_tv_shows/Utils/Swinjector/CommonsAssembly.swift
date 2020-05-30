@@ -17,5 +17,9 @@ class CommonsAssembly: Assembly {
         container.register(ImagesCacheProtocol.self) {
             _ in ImagesCache()
         }
+        
+        container.register(NetworkManagerProtocol.self) {
+            _ in NetworkManager()
+        }
     }
 }
