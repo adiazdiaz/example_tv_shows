@@ -25,20 +25,20 @@ protocol TvShowDetailViewProtocol {
 
 protocol TvShowDetailPresenterProtocol {
     var view: TvShowDetailViewProtocol? { get set }
-    var remoteDataManager: TvShowDetailRemoteDataManagerInputProtocol? { get set }
+    var interactor: TvShowDetailInteractorInputProtocol? { get set }
     var wireFrame: TvShowDetailWireFrameProtocol? { get set }
     
     func onViewDidLoad()
     func setTvShowId(tvShowId: Int)
 }
 
-protocol TvShowDetailRemoteDataManagerInputProtocol {
-    var remoteRequestHandler: TvShowDetailRemoteDataManagerOutputProtocol? { get set }
+protocol TvShowDetailInteractorInputProtocol {
+    var presenter: TvShowDetailInteractorOutputProtocol? { get set }
     
     func getTvShow(tvShowId: Int)
 }
 
-protocol TvShowDetailRemoteDataManagerOutputProtocol {
+protocol TvShowDetailInteractorOutputProtocol {
     func onGetTvShowSuccess(tvShowDetail: TvShowDetail?)
     func onGetTvShowError()
 }

@@ -18,7 +18,7 @@
 		E000D0B224671A8000DD6173 /* PopularTvShowsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0B124671A8000DD6173 /* PopularTvShowsListViewController.swift */; };
 		E000D0B424671AC300DD6173 /* PopularTvShowsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0B324671AC300DD6173 /* PopularTvShowsListPresenter.swift */; };
 		E000D0BA2467302100DD6173 /* PopularTvShowsListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0B92467302100DD6173 /* PopularTvShowsListProtocols.swift */; };
-		E000D0C1246764E600DD6173 /* PopularTvShowsListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C0246764E600DD6173 /* PopularTvShowsListRemoteDataManager.swift */; };
+		E000D0C1246764E600DD6173 /* PopularTvShowsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C0246764E600DD6173 /* PopularTvShowsListInteractor.swift */; };
 		E000D0C524676DB700DD6173 /* TvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C424676DB700DD6173 /* TvShow.swift */; };
 		E000D0C7246770B000DD6173 /* TvShowsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C6246770B000DD6173 /* TvShowsResponse.swift */; };
 		E000D0C92467758600DD6173 /* PopularTvShowsListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000D0C82467758600DD6173 /* PopularTvShowsListWireFrame.swift */; };
@@ -27,7 +27,7 @@
 		E0086061246C878B0063A720 /* TvShowDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0086060246C878B0063A720 /* TvShowDetailProtocols.swift */; };
 		E0086063246C879B0063A720 /* TvShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0086062246C879B0063A720 /* TvShowDetailViewController.swift */; };
 		E0086065246C87A80063A720 /* TvShowDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0086064246C87A80063A720 /* TvShowDetailPresenter.swift */; };
-		E0086067246C87C90063A720 /* TvShowDetailRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0086066246C87C90063A720 /* TvShowDetailRemoteDataManager.swift */; };
+		E0086067246C87C90063A720 /* TvShowDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0086066246C87C90063A720 /* TvShowDetailInteractor.swift */; };
 		E0086069246C87DE0063A720 /* TvShowDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0086068246C87DE0063A720 /* TvShowDetailWireFrame.swift */; };
 		E01B554924826D4600A2271C /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B554824826D4600A2271C /* EndPointType.swift */; };
 		E01B554B24826E2100A2271C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01B554A24826E2100A2271C /* HTTPMethod.swift */; };
@@ -96,7 +96,7 @@
 		E000D0B124671A8000DD6173 /* PopularTvShowsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvShowsListViewController.swift; sourceTree = "<group>"; };
 		E000D0B324671AC300DD6173 /* PopularTvShowsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvShowsListPresenter.swift; sourceTree = "<group>"; };
 		E000D0B92467302100DD6173 /* PopularTvShowsListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvShowsListProtocols.swift; sourceTree = "<group>"; };
-		E000D0C0246764E600DD6173 /* PopularTvShowsListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvShowsListRemoteDataManager.swift; sourceTree = "<group>"; };
+		E000D0C0246764E600DD6173 /* PopularTvShowsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvShowsListInteractor.swift; sourceTree = "<group>"; };
 		E000D0C424676DB700DD6173 /* TvShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShow.swift; sourceTree = "<group>"; };
 		E000D0C6246770B000DD6173 /* TvShowsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsResponse.swift; sourceTree = "<group>"; };
 		E000D0C82467758600DD6173 /* PopularTvShowsListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTvShowsListWireFrame.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 		E0086060246C878B0063A720 /* TvShowDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailProtocols.swift; sourceTree = "<group>"; };
 		E0086062246C879B0063A720 /* TvShowDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailViewController.swift; sourceTree = "<group>"; };
 		E0086064246C87A80063A720 /* TvShowDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailPresenter.swift; sourceTree = "<group>"; };
-		E0086066246C87C90063A720 /* TvShowDetailRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailRemoteDataManager.swift; sourceTree = "<group>"; };
+		E0086066246C87C90063A720 /* TvShowDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailInteractor.swift; sourceTree = "<group>"; };
 		E0086068246C87DE0063A720 /* TvShowDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailWireFrame.swift; sourceTree = "<group>"; };
 		E01B554824826D4600A2271C /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 		E01B554A24826E2100A2271C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -252,7 +252,7 @@
 				E000D0C82467758600DD6173 /* PopularTvShowsListWireFrame.swift */,
 				E0552F59246B1C6400F4FADC /* View */,
 				E000D0B324671AC300DD6173 /* PopularTvShowsListPresenter.swift */,
-				E000D0C0246764E600DD6173 /* PopularTvShowsListRemoteDataManager.swift */,
+				E000D0C0246764E600DD6173 /* PopularTvShowsListInteractor.swift */,
 			);
 			path = PopularTvShowsList;
 			sourceTree = "<group>";
@@ -317,7 +317,7 @@
 				E0086068246C87DE0063A720 /* TvShowDetailWireFrame.swift */,
 				E0086062246C879B0063A720 /* TvShowDetailViewController.swift */,
 				E0086064246C87A80063A720 /* TvShowDetailPresenter.swift */,
-				E0086066246C87C90063A720 /* TvShowDetailRemoteDataManager.swift */,
+				E0086066246C87C90063A720 /* TvShowDetailInteractor.swift */,
 			);
 			path = TvShowDetail;
 			sourceTree = "<group>";
@@ -640,7 +640,7 @@
 				E01B98BD247896FC00B3AC28 /* Swinjector.swift in Sources */,
 				E09EE69924702F9800E175F4 /* TvShowDetail.swift in Sources */,
 				E01B554B24826E2100A2271C /* HTTPMethod.swift in Sources */,
-				E000D0C1246764E600DD6173 /* PopularTvShowsListRemoteDataManager.swift in Sources */,
+				E000D0C1246764E600DD6173 /* PopularTvShowsListInteractor.swift in Sources */,
 				E000D0BA2467302100DD6173 /* PopularTvShowsListProtocols.swift in Sources */,
 				E0086061246C878B0063A720 /* TvShowDetailProtocols.swift in Sources */,
 				E01B554924826D4600A2271C /* EndPointType.swift in Sources */,
@@ -656,7 +656,7 @@
 				E000D0C7246770B000DD6173 /* TvShowsResponse.swift in Sources */,
 				E0E664A52470B4440027D296 /* ImagesCache.swift in Sources */,
 				E01B55512482737A00A2271C /* URLParameterEncoder.swift in Sources */,
-				E0086067246C87C90063A720 /* TvShowDetailRemoteDataManager.swift in Sources */,
+				E0086067246C87C90063A720 /* TvShowDetailInteractor.swift in Sources */,
 				E000D0B224671A8000DD6173 /* PopularTvShowsListViewController.swift in Sources */,
 				E01B5555248276B600A2271C /* NetworkRouter.swift in Sources */,
 				E0552F5D246B1FB700F4FADC /* UIImageViewExtension.swift in Sources */,

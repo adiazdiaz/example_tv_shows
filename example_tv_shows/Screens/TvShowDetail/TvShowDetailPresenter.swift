@@ -12,7 +12,7 @@ import Foundation
 class TvShowDetailPresenter {
     
     var view: TvShowDetailViewProtocol?
-    var remoteDataManager: TvShowDetailRemoteDataManagerInputProtocol?
+    var interactor: TvShowDetailInteractorInputProtocol?
     var wireFrame: TvShowDetailWireFrameProtocol?
     
     var tvShowId: Int?
@@ -47,15 +47,15 @@ extension TvShowDetailPresenter: TvShowDetailPresenterProtocol {
     
     private func getTvShowDetail() {
         if let tvShowId = self.tvShowId {
-            remoteDataManager?.getTvShow(tvShowId: tvShowId)
+            interactor?.getTvShow(tvShowId: tvShowId)
         }
     }
     
     func setTvShowId(tvShowId: Int) { self.tvShowId = tvShowId }
 }
 
-//MARK: - TvShowDetailRemoteDataManagerOutputProtocol
-extension TvShowDetailPresenter: TvShowDetailRemoteDataManagerOutputProtocol {
+//MARK: - TvShowDetailInteractorOutputProtocol
+extension TvShowDetailPresenter: TvShowDetailInteractorOutputProtocol {
     
     func onGetTvShowSuccess(tvShowDetail: TvShowDetail?) {
         loadTvShowDetail(tvShowDetail: tvShowDetail)

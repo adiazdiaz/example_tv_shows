@@ -11,7 +11,7 @@ import Foundation
 class PopularTvShowsListPresenter {
     
     var view: PopularTvShowsListViewProtocol?
-    var remoteDataManager: PopularTvShowsListRemoteDataManagerInputProtocol?
+    var interactor: PopularTvShowsListInteractorInputProtocol?
     var wireFrame: PopularTvShowsListWireFrameProtocol?
     
     var currentPage = 1
@@ -33,7 +33,7 @@ extension PopularTvShowsListPresenter: PopularTvShowsListPresenterProtocol {
     }
     
     private func getPopularTvShows() {
-        remoteDataManager?.getPopularTvShows(page: currentPage)
+        interactor?.getPopularTvShows(page: currentPage)
     }
     
     func getPopularTvShowsCount() -> Int { return popularTvShows.count }
@@ -45,8 +45,8 @@ extension PopularTvShowsListPresenter: PopularTvShowsListPresenterProtocol {
     }
 }
 
-//MARK: - TvShowsListRemoteDataManagerOutputProtocol
-extension PopularTvShowsListPresenter: PopularTvShowsListRemoteDataManagerOutputProtocol {
+//MARK: - PopularTvShowsListInteractorOutputProtocol
+extension PopularTvShowsListPresenter: PopularTvShowsListInteractorOutputProtocol {
     
     func onGetPopularTvShowsSuccess(popularTvShowsResponse: TvShowsResponse?) {
         if let newPopularTvShows = popularTvShowsResponse?.results, !newPopularTvShows.isEmpty {

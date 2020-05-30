@@ -25,7 +25,7 @@ protocol PopularTvShowsListViewProtocol {
 
 protocol PopularTvShowsListPresenterProtocol {
     var view: PopularTvShowsListViewProtocol? { get set }
-    var remoteDataManager: PopularTvShowsListRemoteDataManagerInputProtocol? { get set }
+    var interactor: PopularTvShowsListInteractorInputProtocol? { get set }
     var wireFrame: PopularTvShowsListWireFrameProtocol? { get set }
     
     func onViewDidLoad()
@@ -34,13 +34,13 @@ protocol PopularTvShowsListPresenterProtocol {
     func showTvShowDetail(index: Int)
 }
 
-protocol PopularTvShowsListRemoteDataManagerInputProtocol {
-    var remoteRequestHandler: PopularTvShowsListRemoteDataManagerOutputProtocol? { get set }
+protocol PopularTvShowsListInteractorInputProtocol {
+    var presenter: PopularTvShowsListInteractorOutputProtocol? { get set }
     
     func getPopularTvShows(page: Int)
 }
 
-protocol PopularTvShowsListRemoteDataManagerOutputProtocol {
+protocol PopularTvShowsListInteractorOutputProtocol {
     func onGetPopularTvShowsSuccess(popularTvShowsResponse: TvShowsResponse?)
     func onGetPopularTvShowsError()
 }

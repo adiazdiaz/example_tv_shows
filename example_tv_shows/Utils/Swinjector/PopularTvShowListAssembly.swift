@@ -31,14 +31,14 @@ class PopularTvShowListAssembly: Assembly {
         }
         .initCompleted { resolver, _presenter in
             let presenter = _presenter as! PopularTvShowsListPresenter
-            presenter.remoteDataManager = resolver.resolve(PopularTvShowsListRemoteDataManagerInputProtocol.self)
+            presenter.interactor = resolver.resolve(PopularTvShowsListInteractorInputProtocol.self)
         }
         
         
-        //RemoteDataManager
-        container.register(PopularTvShowsListRemoteDataManagerInputProtocol.self) { resolver in
-            return PopularTvShowsListRemoteDataManager(networkManager: resolver.resolve(NetworkManagerProtocol.self),
-                remoteRequestHandler: resolver.resolve(PopularTvShowsListPresenterProtocol.self) as? PopularTvShowsListRemoteDataManagerOutputProtocol)
+        //Interactor
+        container.register(PopularTvShowsListInteractorInputProtocol.self) { resolver in
+            return PopularTvShowsListInteractor(networkManager: resolver.resolve(NetworkManagerProtocol.self),
+                                                presenter: resolver.resolve(PopularTvShowsListPresenterProtocol.self) as? PopularTvShowsListInteractorOutputProtocol)
         }
         
         

@@ -35,13 +35,13 @@ class TvShowDetailAssembly: Assembly {
         }
         .initCompleted { resolver, _presenter in
             let presenter = _presenter as! TvShowDetailPresenter
-            presenter.remoteDataManager = resolver.resolve(TvShowDetailRemoteDataManagerInputProtocol.self)
+            presenter.interactor = resolver.resolve(TvShowDetailInteractorInputProtocol.self)
         }
 
-        //RemoteDataManager
-        container.register(TvShowDetailRemoteDataManagerInputProtocol.self) { resolver in
-            return TvShowDetailRemoteDataManager(networkManager: resolver.resolve(NetworkManagerProtocol.self),
-                remoteRequestHandler: resolver.resolve(TvShowDetailPresenterProtocol.self) as? TvShowDetailRemoteDataManagerOutputProtocol)
+        //Interactor
+        container.register(TvShowDetailInteractorInputProtocol.self) { resolver in
+            return TvShowDetailInteractor(networkManager: resolver.resolve(NetworkManagerProtocol.self),
+                                          presenter: resolver.resolve(TvShowDetailPresenterProtocol.self) as? TvShowDetailInteractorOutputProtocol)
         }
         
         //WireFrame
