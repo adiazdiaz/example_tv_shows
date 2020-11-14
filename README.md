@@ -1,6 +1,6 @@
 # example_tv_shows
 
-App de ejemplo desarrollada en swift para dispositivos iOS. En esta aplicación he ido aplicando diferentes conceptos como:
+App de ejemplo desarrollada en swift con UIKit para dispositivos iOS. En esta aplicación he ido aplicando diferentes conceptos como:
 
 - ✅ Patrón de presentación MVP.
 - ✅ Patrón de presentación VIPER.
